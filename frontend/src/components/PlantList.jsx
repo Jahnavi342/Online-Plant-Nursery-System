@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axiosInstance from "../axiosConfig";
 
 const PlantList = () => {
   const [plants, setPlants] = useState([]);
@@ -7,7 +7,7 @@ const PlantList = () => {
   useEffect(() => {
     const fetchPlants = async () => {
       try {
-        const res = await axios.get("http://localhost:5001/api/plants");
+        const res = await axiosInstance.get("/api/plants");
         setPlants(res.data);
       } catch (err) {
         console.error(err);
@@ -34,7 +34,7 @@ const PlantList = () => {
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
-                src={`http://localhost:5001${plant.image}`}
+                src={`{plant.image}`}
                 alt={plant.name}
                 className="w-full h-56 object-cover"
               />

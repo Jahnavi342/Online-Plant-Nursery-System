@@ -23,7 +23,7 @@ const PlantDetails = () => {
 
   return (
     <div className="max-w-xl mx-auto mt-10 p-6 shadow rounded">
-      <img src={`http://localhost:5001${plant.image}`} />
+      <img src={`{plant.image}`} />
       <h2 className="text-2xl font-bold">{plant.name}</h2>
       <p className="mb-2 font-bold">Category: {plant.category}</p>
       <p className="mb-2 font-bold">Price: ${plant.price}</p>

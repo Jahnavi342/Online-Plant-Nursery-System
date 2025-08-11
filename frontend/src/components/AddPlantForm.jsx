@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useState } from "react";
+import axiosInstance from "../axiosConfig";
 
 const AddPlantForm = () => {
   const [plant, setPlant] = useState({
@@ -30,7 +30,7 @@ const AddPlantForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:5001/api/plants", formData, {
+      await axiosInstance.post("/api/plants", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Plant added successfully!");

@@ -113,7 +113,7 @@ const UserDashboard = () => {
                 className="border p-4 rounded shadow bg-white"
               >
                 <img
-                  src={`http://localhost:5001${plant.image}`}
+                  src={`{plant.image}`}
                   alt={plant.name}
                   className="w-full h-48 object-cover rounded mb-2"
                 />
@@ -145,7 +145,7 @@ const UserDashboard = () => {
                 className="border p-4 rounded shadow bg-white"
               >
                 <img
-                  src={`http://localhost:5001${plant.image}`}
+                  src={`{plant.image}`}
                   alt={plant.name}
                   className="w-full h-48 object-cover rounded mb-2"
                 />

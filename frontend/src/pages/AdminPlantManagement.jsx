@@ -46,14 +46,14 @@ const AdminPlantManagement = () => {
     try {
       if (editingId) {
         // UPDATE
-        await axios.put(`http://localhost:5001/api/plants/${editingId}`, data, {
+        await axios.put(`/api/plants/${editingId}`, data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         alert("Plant updated");
       } else {
         // ADD
         if (!imageFile) return alert("Please upload an image");
-        await axios.post("http://localhost:5001/api/plants", data, {
+        await axios.post("/api/plants", data, {
           headers: { "Content-Type": "multipart/form-data" },
         });
         alert("Plant added");
@@ -178,7 +178,7 @@ const AdminPlantManagement = () => {
           >
             <div className="flex items-center gap-4">
               <img
-                src={`http://localhost:5001${plant.image}`}
+                src={`{plant.image}`}
                 alt={plant.name}
                 className="w-16 h-16 object-cover rounded"
               />

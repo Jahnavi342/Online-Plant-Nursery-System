@@ -58,7 +58,7 @@ const HomePage = () => {
               key={plant._id}
               className="bg-green-100 p-4 rounded shadow hover:shadow-md"
             >
-              <img src={`http://localhost:5001${plant.image}`} />
+              <img src={plant.image} />
 
               <h3 className="text-lg font-semibold mt-2">{plant.name}</h3>
               <p className="text-sm text-gray-600">${plant.price}</p>
