@@ -2,8 +2,8 @@ import axios from 'axios';
 import { redirectToLogin } from './utils/tokenUtils';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5001', // local
-  //baseURL: 'http://3.26.96.188:5001', // live
+  // ✅ Use relative path for production so nginx proxy works
+  baseURL: '/api',
   headers: { 'Content-Type': 'application/json' },
 });
 
@@ -16,9 +16,7 @@ axiosInstance.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 // Response interceptor to handle 401 errors
@@ -26,7 +24,6 @@ axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Clear invalid token and redirect to login
       redirectToLogin();
     }
     return Promise.reject(error);
