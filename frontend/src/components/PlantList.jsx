@@ -46,7 +46,7 @@ const PlantList = () => {
                   <strong>Category:</strong> {plant.category}
                 </p>
                 <p className="text-gray-600 mb-2">
-                  <strong>Price:</strong> ₹{plant.price}
+                  <strong>Price:</strong> ${plant.price}
                 </p>
                 <p className="text-sm text-gray-500 mb-4">
                   {plant.description}
@@ -64,3 +64,4 @@ const PlantList = () => {
 };
 
 export default PlantList;
+
