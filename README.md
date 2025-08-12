@@ -32,9 +32,10 @@ Version Control: GitHub
 CI/CD: GitHub Actions
 
 **Repository Links**
-Frontend: GitHub Frontend Repo
 
-Backend: GitHub Backend Repo
+Frontend: GitHub Frontend Repo: https://github.com/Jahnavi342/Online-Plant-Nursery-System/tree/main/frontend
+
+Backend: GitHub Backend Repo: https://github.com/Jahnavi342/Online-Plant-Nursery-System/tree/main/backend
 
 **JIRA Board**
 JIRA Project Board URL: https://kao-ho.atlassian.net/jira/software/projects/OPNS/boards/34?atlOrigin=eyJpIjoiNDBiMmQxOGI1Mjg5NDY3Zjk3ZjA5ZDMxZDhmNWIxOWQiLCJwIjoiaiJ9
@@ -53,7 +54,7 @@ bash
 Copy
 Edit
 # Clone repo
-git clone https://github.com/your-username/Online-plant-Nursery-System.git
+git clone https://github.com/Jahnavi342/Online-Plant-Nursery-System.git
 cd Online-plant-Nursery-System/backend
 
 # Install dependencies
@@ -121,3 +122,4 @@ Admin:
 Email: admin@gmail.com
 
 Password: Admin123
+
