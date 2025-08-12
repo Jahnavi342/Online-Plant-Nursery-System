@@ -48,11 +48,10 @@ Related User Stories and Subtasks
 
 Evidence of sprint progress tracking
 
-⚙️ Project Setup
-1️⃣ Backend Setup
-bash
-Copy
-Edit
+**Project Setup**
+
+**Backend Setup**
+
 # Clone repo
 git clone https://github.com/Jahnavi342/Online-Plant-Nursery-System.git
 cd Online-plant-Nursery-System/backend
@@ -122,4 +121,5 @@ Admin:
 Email: admin@gmail.com
 
 Password: Admin123
+
 
